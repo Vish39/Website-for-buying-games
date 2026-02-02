@@ -1,3 +1,11 @@
+
+
+https://github.com/user-attachments/assets/84a59502-c9c0-4982-9cb1-6def7fd90fd7
+
+
+
+https://github.com/user-attachments/assets/a8904688-953b-41e3-ae90-f491eb21fc26
+
 Game Store Demo
 A responsive single-page demo website for a gaming store with flip card hover effects, image slider, and "Add to Cart" functionality. Built with HTML, CSS, and JavaScript.
 ​
