@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">GameStore</div>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="login.html">login</a></li>
+    </ul>
+    <div class="search-bar">
+        <input type="text" placeholder="Search games...">
+        <button>Search</button>
+    </div>
+    <div class="account">
+        <a href="create_accout.html"><img src="icons8-account-50.png" alt="Account" /></a>
+    </div>
+    
+</nav>
+<br>
+<br>
+
+
+<div class="slider">
+    <img src="add1.jpg" alt="Game 1" class="slider-img" style="--pos: 1;">
+    <img src="add2.jpg" alt="Game 2" class="slider-img" style="--pos: 2;">
+    <img src="add3.jpg" alt="Game 3" class="slider-img" style="--pos: 3;">
+    <img src="god.jpg" alt="Game 4" class="slider-img" style="--pos: 4;">
+    <img src="f2.jpg" alt="Game 5" class="slider-img" style="--pos: 5;">
+</div>
+
+    <!-- Game Sections -->
+     
+    <div class="category-section">
+        <h2>Action Games</h2>
+        <div class="game-grid">
+            <!-- Action games -->
+            <div class="game-card" onmouseover="flipCard(this)" onmouseout="unflipCard(this)">
+                <div class="front"><img src="gta5.jpeg" alt="GTA 5"></div>
+                <div class="back">
+                    <h3>GTA 5</h3>
+                    <p>Action-packed open world game.</p>
+                    <h3>Price: $28</h3>
+                    <button class="add-to-cart-btn" onclick="addToCart('GTA 5')">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="game-card" onmouseover="flipCard(this)" onmouseout="unflipCard(this)">
+                <div class="front"><img src="m2.jpg" alt="mafia 2"></div>
+                <div class="back">
+                    <h3>Mafia 2</h3>
+                    <p>Action-packed game based on the life of a mafia.</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('God of War')">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="game-card" onmouseover="flipCard(this)" onmouseout="unflipCard(this)">
+                <div class="front"><img src="m3.jpg" alt="mafia 3"></div>
+                <div class="back">
+                    <h3>Mafia 2</h3>
+                    <p>Action-packed game based on the life of a mafia.</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('God of War')">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="game-card" onmouseover="flipCard(this)" onmouseout="unflipCard(this)">
+                <div class="front"><img src="f2.jpg" alt="f2"></div>
+                <div class="back">
+                    <h3>Mafia 2</h3>
+                    <p>Action-packed game based on the life of a surviver.</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('God of War')">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="game-card" onmouseover="flipCard(this)" onmouseout="unflipCard(this)">
+                <div class="front"><img src="hitman3.jpg" alt="Hitman 3"></div>
+                <div class="back">
+                    <h3>hitman3</h3>
+                    <p>Trained killer.</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('God of War')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="category-section">
+        <h2>Adventure Games</h2>
+        <div class="game-grid">
+            <!-- Adventure games -->
+            <div class="game-card" onmouseover="flipCard(this)" onmouseout="unflipCard(this)">
+                <div class="front"><img src="god.jpg" alt="God of War"></div>
+                <div class="back">
+                    <h3>God of War</h3>
+                    <p>An epic mythological journey.</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('God of War')">Add to Cart</button>
+                </div>
+            </div>
+    
+            <div class="game-card" onmouseover="flipCard(this)" onmouseout="unflipCard(this)">
+                <div class="front"><img src="m2.jpg" alt="mafia 2"></div>
+                <div class="back">
+                    <h3>Mafia 2</h3>
+                    <p>Action-packed game based on the life of a mafia.</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('God of War')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="category-section">
+        <h2>Fantasy Games</h2>
+        <div class="game-grid">
+            <!-- Fantasy games -->
+            <div class="game-card" onmouseover="flipCard(this)" onmouseout="unflipCard(this)">
+                <div class="front"><img src="f2.jpg" alt="God of War"></div>
+                <div class="back">
+                    <h3>God of War</h3>
+                    <p>An epic mythological journey.</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('God of War')">Add to Cart</button>
+                </div>
+            </div>
+    
+            <div class="game-card" onmouseover="flipCard(this)" onmouseout="unflipCard(this)">
+                <div class="front"><img src="f3.jpg" alt="God of War"></div>
+                <div class="back">
+                    <h3>God of War</h3>
+                    <p>An epic mythological journey.</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('God of War')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="category-section">
+        <h2>Car Games</h2>
+        <div class="game-grid">
+            <!-- Fantasy games -->
+            <div class="game-card" onmouseover="flipCard(this)" onmouseout="unflipCard(this)">
+                <div class="front"><img src="froza2.jpg" alt="Froza Horizon 2"></div>
+                <div class="back">
+                    <h3>Froza Horizon 2</h3>
+                    <p>Car simulation .</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('God of War')">Add to Cart</button>
+                </div>
+            </div>
+    
+            <div class="game-card" onmouseover="flipCard(this)" onmouseout="unflipCard(this)">
+                <div class="front"><img src="froza 3.jpg" alt="Froza Horizon 3"></div>
+                <div class="back">
+                    <h3>Froza Horizon 3</h3>
+                    <p>Car simulation.</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('God of War')">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="game-card" onmouseover="flipCard(this)" onmouseout="unflipCard(this)">
+                <div class="front"><img src="froza 4.jpg" alt="Froza Horizon 4"></div>
+                <div class="back">
+                    <h3>Froza Horizon 4</h3>
+                    <p>Car simulation.</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('God of War')">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="game-card" onmouseover="flipCard(this)" onmouseout="unflipCard(this)">
+                <div class="front"><img src="froza 5.jpg" alt="Froza Horizon 5"></div>
+                <div class="back">
+                    <h3>Froza Horizon 5</h3>
+                    <p>Car simulation.</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('God of War')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        
+        <!-- Add more game cards similarly -->
+    </div>
+</body>
+<footer class="website-footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>GameStore</h3>
+            <p>Your one-stop destination for epic gaming adventures!</p>
+        </div>
+        <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="icons8-account-50.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 GameStore. All rights reserved.</p>
+    </div>
+</footer>
+<script src="script.js"></script>
+</html>

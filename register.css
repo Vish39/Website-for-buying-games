@@ -1,0 +1,111 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #0fbcf9, #4caf50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Register Container */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Register Box Styling */
+.register-box {
+    background-color: #1e272e;
+    color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Register Heading and Subtext */
+.register-box h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.register-box .register-subtext {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #d2dae2;
+}
+
+/* Input Group Styling */
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+.input-group label {
+    font-size: 0.9rem;
+    color: #d2dae2;
+}
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+.input-group input:focus {
+    border-color: #0fbcf9;
+    box-shadow: 0 0 8px rgba(15, 188, 249, 0.5);
+}
+
+/* Register Button */
+.register-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0fbcf9;
+    border: none;
+    color: #ffffff;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.register-button:hover {
+    background-color: #ffffff;
+    color: #0fbcf9;
+}
+
+/* Login Link */
+.login-link {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+.login-link a {
+    color: #4caf50;
+    font-weight: bold;
+    text-decoration: none;
+}
+.login-link a:hover {
+    text-decoration: underline;
+}
